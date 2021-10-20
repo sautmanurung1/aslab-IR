@@ -48,7 +48,7 @@ if($_POST){
                             WHERE id_produk = '{$_POST['id']}'";
     $query=mysqli_query($Koneksi, $sql);
 
-    $sql="UPDATE buku SET nama_buku='{$_POST['nama_barang']}',
+    $sql="UPDATE buku SET nama_buku='{$_POST['judul_buku']}',
                             penulis='{$_POST['penulis']}', 
                             penerbit='{$_POST['penerbit']}' 
                             WHERE id_produk='{$_POST['id']}'";

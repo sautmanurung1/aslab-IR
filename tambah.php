@@ -43,7 +43,7 @@
             $data = mysqli_fetch_array($query);
             $last_id = $data['last_id'];
 
-            $sql = "INSERT INTO buku(id_produk, nama_buku, penulis, penerbit) VALUES ('$last_id', '{$_POST['nama_barang']}', '{$_POST['penulis']}', '{$_POST['penerbit']}')";
+            $sql = "INSERT INTO buku(id_produk, nama_buku, penulis, penerbit) VALUES ('$last_id', '{$_POST['judul_buku']}', '{$_POST['penulis']}', '{$_POST['penerbit']}')";
             $query = mysqli_query($Koneksi, $sql);
 
             if($query){
